@@ -60,11 +60,8 @@ public class ExplainActivity extends ActionBarActivity {
 
         //Fragment をスタックに追加する
         //メインレイアウトに対して追加先のビューのID、Fragment、Fragmentのタグ。
-        //add() したときに既にバックスタックに同じタグの Fragment が存在する場合、
-        //Fragment は新規作成されず、既にインスタンス化してある Fragment が再表示される。
         ft.add(R.id.explain_layout, fragment1, "layout_fragment_1");
-//        ft.add(R.id.explain_layout, fragment2, "layout_fragment_2");
-        //
+
         ft.commit();
 
     }
@@ -77,6 +74,8 @@ public class ExplainActivity extends ActionBarActivity {
         return true;
     }
 
+
+    //オプションメニューで選択されたフラグメントに応じてreplace
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){

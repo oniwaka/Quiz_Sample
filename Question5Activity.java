@@ -51,9 +51,6 @@ public class Question5Activity extends ActionBarActivity implements OnClickListe
         Intent intent = getIntent();
         ansCount = intent.getIntExtra("countNumber",0);
 
-//        TextView textView = (TextView) findViewById(R.id.textTest);
-//        textView.setText(String.format("%d問正解", ansCount));
-
     }
 
     public void onClick(View view){

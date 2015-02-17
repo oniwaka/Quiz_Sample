@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.start_button).setOnClickListener(new View.OnClickListener() {
+            //スタートボタンで画面遷移
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Question1Activity.class);
